@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Healthcare Appointment System
 
 ## SDC Requirements
@@ -19,3 +20,6 @@ Password: admin123
 3. Install Live Server.
 4. Right-click index.html.
 5. Select Open with Live Server.
+=======
+# Healthcare-Appointment-System
+>>>>>>> b786b9a85fd87e84e761b89b4656d725ea1ac883
