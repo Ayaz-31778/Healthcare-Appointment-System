@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | E-Shop</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar dashboard-nav">
+    <a class="brand" href="dashboard.html">E-Shop</a>
+    <div class="nav-links">
+      <a class="active" href="dashboard.html">Products</a>
+      <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="orders.html">Orders</a>
+      <a href="profile.html">Profile</a>
+      <button id="logoutBtn" class="btn btn-danger small">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container page">
+    <section class="welcome-banner">
+      <div>
+        <p class="eyebrow">USER MODULE</p>
+        <h1>Welcome, <span id="userName">User</span> 👋</h1>
+        <p>Find products and add them to your shopping cart.</p>
+      </div>
+      <div class="welcome-icon">🛒</div>
+    </section>
+
+    <section class="toolbar">
+      <input id="searchInput" class="search-input" type="search" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Books">Books</option>
+        <option value="Home">Home</option>
+      </select>
+    </section>
+
+    <div id="productGrid" class="product-grid"></div>
+  </main>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+</html>

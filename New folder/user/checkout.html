@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | E-Shop</title><link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar"><a class="brand" href="dashboard.html">E-Shop</a><div class="nav-links"><a href="dashboard.html">Products</a><a href="cart.html">Cart</a><a href="orders.html">Orders</a><button id="logoutBtn" class="btn btn-danger small">Logout</button></div></nav>
+  <main class="container page">
+    <div class="page-title"><div><p class="eyebrow">USER MODULE</p><h1>Checkout</h1></div></div>
+    <div class="checkout-grid">
+      <section class="panel"><h2>Delivery Details</h2>
+        <form id="checkoutForm">
+          <label>Full Name</label><input id="fullName" required>
+          <label>Phone</label><input id="phone" type="tel" required>
+          <label>Address</label><textarea id="address" rows="4" required></textarea>
+          <label>Payment Method</label>
+          <select id="payment"><option>Cash on Delivery</option><option>UPI (Demo)</option><option>Card (Demo)</option></select>
+          <button class="btn btn-primary full" type="submit">Place Order</button>
+          <p id="checkoutMessage" class="form-message"></p>
+        </form>
+      </section>
+      <section class="panel"><h2>Order Summary</h2><div id="checkoutSummary"></div></section>
+    </div>
+  </main>
+  <script src="../js/storage.js"></script><script src="../js/orders.js"></script>
+</body>
+</html>

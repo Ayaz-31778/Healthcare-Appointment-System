@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | E-Shop</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="dashboard.html">E-Shop</a>
+    <div class="nav-links">
+      <a href="dashboard.html">Products</a><a class="active" href="cart.html">Cart</a><a href="orders.html">Orders</a><a href="profile.html">Profile</a>
+      <button id="logoutBtn" class="btn btn-danger small">Logout</button>
+    </div>
+  </nav>
+  <main class="container page">
+    <div class="page-title"><div><p class="eyebrow">USER MODULE</p><h1>Shopping Cart</h1></div><a class="btn btn-outline" href="dashboard.html">← Continue Shopping</a></div>
+    <div id="cartContent"></div>
+  </main>
+  <script src="../js/storage.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+</html>

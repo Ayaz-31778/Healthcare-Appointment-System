@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | E-Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <a class="brand centered" href="index.html">E-Shop</a>
+    <h1>Create Account</h1>
+    <p class="muted">Register as a customer and start shopping.</p>
+
+    <form id="signupForm">
+      <label>Full Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+
+      <label>Email</label>
+      <input id="email" type="email" placeholder="Enter email" required>
+
+      <label>Password</label>
+      <input id="password" type="password" minlength="6" placeholder="Minimum 6 characters" required>
+
+      <label>Confirm Password</label>
+      <input id="confirmPassword" type="password" minlength="6" placeholder="Re-enter password" required>
+
+      <button class="btn btn-primary full" type="submit">Create Account</button>
+      <p id="message" class="form-message"></p>
+    </form>
+
+    <p class="auth-bottom">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

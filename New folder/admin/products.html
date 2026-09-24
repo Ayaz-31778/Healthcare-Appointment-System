@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Manage Products | E-Shop</title><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<nav class="navbar admin-nav"><a class="brand" href="dashboard.html">E-Shop <span class="admin-label">ADMIN</span></a><div class="nav-links"><a href="dashboard.html">Dashboard</a><a class="active" href="products.html">Products</a><a href="users.html">Users</a><a href="orders.html">Orders</a><button id="logoutBtn" class="btn btn-danger small">Logout</button></div></nav>
+<main class="container page">
+<div class="page-title"><div><p class="eyebrow">ADMIN MODULE</p><h1>Product Management</h1></div><button id="addProductBtn" class="btn btn-primary">+ Add Product</button></div>
+<section id="productFormPanel" class="panel hidden"><h2 id="formTitle">Add Product</h2><form id="productForm" class="form-grid"><input type="hidden" id="productId"><div><label>Product Name</label><input id="productName" required></div><div><label>Price</label><input id="productPrice" type="number" min="1" required></div><div><label>Category</label><select id="productCategory"><option>Electronics</option><option>Fashion</option><option>Books</option><option>Home</option></select></div><div><label>Stock</label><input id="productStock" type="number" min="0" required></div><div class="full-row"><label>Image URL (optional)</label><input id="productImage" placeholder="https://..."></div><div class="full-row"><label>Description</label><textarea id="productDescription" rows="3" required></textarea></div><div class="full-row form-actions"><button class="btn btn-primary" type="submit">Save Product</button><button id="cancelProduct" class="btn btn-outline" type="button">Cancel</button></div></form></section>
+<section class="panel"><div id="adminProductsTable"></div></section>
+</main><script src="../js/storage.js"></script><script src="../js/admin.js"></script>
+</body></html>
