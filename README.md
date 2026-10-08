@@ -175,7 +175,8 @@ For a production system, these would require a secure backend, database, authent
 ## 👨‍💻 Author
 
 **Shaik Ayaz Dadavali**  
-GitHub: [@Ayaz-31778](https://github.com/Ayaz-31778)
+GitHub: [@Ayaz-31778](https://github.com/Ayaz-31778)  
+Email: [ayazdadavali1@gmail.com](mailto:ayazdadavali1@gmail.com)
 
 ## 📄 Academic Project
 
