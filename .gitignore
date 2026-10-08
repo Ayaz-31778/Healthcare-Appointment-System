@@ -1,0 +1,35 @@
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Node / package manager files (if tooling is added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build / coverage output
+dist/
+build/
+coverage/
+
+# Local editor / backup files
+*.swp
+*.swo
+*~
