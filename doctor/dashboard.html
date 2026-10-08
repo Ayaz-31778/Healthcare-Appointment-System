@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar doctor-nav">
+
+        <a class="brand" href="dashboard.html">
+            HealthCare+ <span>DOCTOR</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a class="active" href="dashboard.html">
+                Appointments
+            </a>
+
+            <button id="logoutBtn" class="btn danger small">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <main class="container page">
+
+        <section class="welcome">
+
+            <div>
+
+                <p class="eyebrow">
+                    DOCTOR MODULE
+                </p>
+
+                <h1>
+                    Welcome,
+                    <span id="doctorName"></span>
+                    👨‍⚕️
+                </h1>
+
+                <p id="doctorSpecialty">
+                    Doctor
+                </p>
+
+                <p>
+                    Review patient appointment requests and confirm or reject them.
+                </p>
+
+            </div>
+
+            <div>
+                🩺
+            </div>
+
+        </section>
+
+        <div class="stat-grid doctor-stats">
+
+            <div class="stat">
+
+                <span>
+                    Pending
+                </span>
+
+                <b id="pendingCount">
+                    0
+                </b>
+
+                ⏳
+
+            </div>
+
+            <div class="stat">
+
+                <span>
+                    Confirmed
+                </span>
+
+                <b id="confirmedCount">
+                    0
+                </b>
+
+                ✅
+
+            </div>
+
+            <div class="stat">
+
+                <span>
+                    Total
+                </span>
+
+                <b id="totalCount">
+                    0
+                </b>
+
+                📅
+
+            </div>
+
+        </div>
+
+        <section>
+
+            <div class="title">
+
+                <div>
+
+                    <p class="eyebrow">
+                        PATIENT REQUESTS
+                    </p>
+
+                    <h2>
+                        Appointment Requests
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div id="doctorAppointments"></div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/doctor.js"></script>
+
+</body>
+
+</html>
